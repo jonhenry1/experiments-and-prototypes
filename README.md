@@ -1,4 +1,4 @@
-# experiments-and-prototypes -- AI Research & Production Systems
+AI Research & Production Systems
 
 A portfolio of experiments in accountable AI-assisted research,
 analysis, software development, and instructional production.

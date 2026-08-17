@@ -2,8 +2,6 @@
 
 How Fieldbook was conceived, researched, built, tested, corrected, and simplified.
 
-# Process
-
 Fieldbook was developed around a recurring research problem:
 
 > Public-record and documentary evidence often arrives in inconsistent formats, but aggressive normalization can destroy context, provenance, and uncertainty.

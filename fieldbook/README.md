@@ -1,34 +1,50 @@
-Question: Can messy research evidence become computationally useful without losing its identity as evidence?
+# Fieldbook
 
-Try this
-1. Start with a source record.
-2. Inspect the original material.
-3. Then follow the record as information is:
-  (a) acquired
-  (b) extracted
-  (c) normalized
-  (d) compared
-  (e) used in an observation
+Fieldbook is an experimental research system for acquiring, preserving, normalizing, comparing, and analyzing documentary and public-record evidence.
 
-What to Watch for
-1. The source remains available
-2. The normalized record does not replace the original source.
-3. You should be able to move backward toward the evidence.
-4. Normalization is limited
-5. The system transforms values where comparison requires it.
-6. It does not attempt to turn every feature of the source into a universal ontology.
-7. Missing information stays missing
-8. The system should not silently invent values merely to complete a schema.
-9. Observation and interpretation remain distinguishable
+The central design problem is simple:
 
-Try running a computational observation such as: "County A reports a substantially higher value than County B."
+> How can messy real-world evidence become computationally useful without losing provenance, ambiguity, or the distinction between evidence and interpretation?
 
-Such a result is different from an explanation such as: "County A's policy caused a difference."
+## What Fieldbook is designed to preserve
 
-The latter requires additional evidence.
+- original source material
+- provenance
+- raw values
+- normalized values
+- missing or ambiguous information
+- the distinction between observation and interpretation
 
-What this demonstrates
-1. Provenance
-2. Lean normalization
-3. Evidence/inference boundaries
-4. Source-preserving analysis
+## Core workflow
+
+Source  
+→ acquisition  
+→ extraction  
+→ lean normalization  
+→ observation  
+→ comparison  
+→ interpretation
+
+## Why this matters
+
+AI systems can make research dramatically faster, but they can also hide transformations and assumptions.
+
+Fieldbook experiments with an alternative approach: use AI aggressively for research and analysis while keeping the evidentiary path inspectable.
+
+## Portfolio focus
+
+Fieldbook demonstrates:
+
+- provenance preservation
+- lean normalization
+- evidence/inference boundaries
+- hallucination mitigation
+- source-preserving analysis
+- human review at consequential interpretive boundaries
+
+See also:
+
+- [Process](PROCESS.md)
+- [Demo](DEMO.md)
+
+

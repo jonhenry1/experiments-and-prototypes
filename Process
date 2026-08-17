@@ -1,1 +1,377 @@
+# Process
+
+## How these systems are built
+
+The software in this portfolio was developed through intensive collaboration with multiple AI systems.
+
+That fact is not incidental to the portfolio.
+
+It is part of what the portfolio is examining.
+
+AI makes it possible for a single researcher or product designer to move unusually quickly between:
+
+* research
+* conceptual modeling
+* product architecture
+* interface design
+* coding
+* debugging
+* data modeling
+* testing
+* documentation
+* revision
+
+But this speed creates its own problem.
+
+A system can become complex before its assumptions have been examined.
+
+A persuasive explanation can appear before its evidence has been established.
+
+A feature proposed during brainstorming can gradually become treated as though it had always been an intentional requirement.
+
+I think of this as a form of **AI-mediated thought creep**.
+
+The development process therefore includes deliberate mechanisms for slowing down particular kinds of inference while allowing production itself to remain fast.
+
+---
+
+## The basic development loop
+
+Most projects follow some variation of this sequence:
+
+### 1. Start with a real problem
+
+The project begins with a concrete research, instructional, or production problem.
+
+Examples include:
+
+* preserving provenance across public-record research
+* producing better reasoning instruction
+* comparing heterogeneous datasets
+* preventing unsupported claims in generated professional materials
+* distinguishing computational pattern detection from historical interpretation
+
+The initial question is usually functional:
+
+> What is currently difficult, unreliable, repetitive, or unnecessarily opaque?
+
+---
+
+### 2. Model the problem before building the interface
+
+Before concentrating on screens, the project identifies the important entities and boundaries.
+
+For example:
+
+**Research systems**
+
+Source
+→ acquisition
+→ extraction
+→ normalization
+→ observation
+→ interpretation
+
+**Instructional systems**
+
+Research finding
+→ failure mechanism
+→ production specification
+→ generated item
+→ audit
+→ student-facing artifact
+
+**Evidence-bounded writing**
+
+Requirement
+→ possible claim
+→ supporting evidence
+→ counter-evidence
+→ confidence
+→ safe wording
+
+The interface is then built around those distinctions.
+
+This reduces the temptation to let a chat interface become the architecture.
+
+---
+
+### 3. Use AI aggressively for exploration
+
+AI is useful for generating possibilities quickly.
+
+During development, models may help with:
+
+* alternative architectures
+* interface concepts
+* database schemas
+* code
+* transformations
+* tests
+* explanations
+* edge cases
+* production rules
+* documentation
+* critiques of other model outputs
+
+This stage can be intentionally expansive.
+
+Many ideas are allowed to exist temporarily.
+
+They are not all treated as decisions.
+
+---
+
+### 4. Separate proposals from commitments
+
+One of the most important practices is distinguishing:
+
+**AI proposed this**
+
+from
+
+**the system requires this**
+
+A suggestion becomes part of the architecture only after it survives inspection.
+
+Questions include:
+
+* Does the feature solve a real problem?
+* Does it introduce unnecessary complexity?
+* Can the underlying claim be justified?
+* Does it create new opportunities for silent inference?
+* Is the same function already performed elsewhere?
+* Does it increase maintenance cost?
+* Can the system remain useful without it?
+
+This often results in removing features rather than adding them.
+
+---
+
+### 5. Prefer simple representations
+
+A recurring design preference is to reduce unnecessary abstraction.
+
+For example, rather than building a large ontology when a small schema will work, the system may retain:
+
+* original value
+* normalized value
+* source
+* transformation note
+* confidence or status
+
+The objective is not maximum formalization.
+
+It is **sufficient structure with minimum epistemic distortion**.
+
+---
+
+### 6. Build a narrow working path
+
+Instead of implementing every possible use case, development focuses on one complete path.
+
+For example:
+
+**one source**
+
+through
+
+**one extraction**
+
+through
+
+**one normalization**
+
+through
+
+**one analysis**
+
+through
+
+**one inspectable result**
+
+A complete narrow workflow reveals architectural problems more reliably than a large collection of unfinished features.
+
+---
+
+### 7. Let AI produce
+
+Once the boundaries are clear, AI can do substantial production work.
+
+This may include:
+
+* writing code
+* producing candidate instructional items
+* generating transformations
+* drafting interface copy
+* proposing classifications
+* producing structured output
+* adapting existing components
+* creating test data
+
+Speed is valuable here.
+
+The purpose of epistemic controls is not to prevent AI production.
+
+It is to make rapid production safer to inspect.
+
+---
+
+### 8. Inspect the result against something external to the generation
+
+Outputs are evaluated against:
+
+* original evidence
+* schemas
+* explicit research commitments
+* known requirements
+* production specifications
+* rubrics
+* test cases
+* expected transformations
+
+This is important because fluent output is not itself evidence of correctness.
+
+A good-looking result can still be structurally wrong.
+
+---
+
+### 9. Identify the class of failure
+
+When something fails, the first response is not always another prompt.
+
+The more useful question is:
+
+> What kind of error is this?
+
+Examples:
+
+* unsupported inference
+* source loss
+* over-normalization
+* specification drift
+* ambiguous classification
+* hallucinated requirement
+* duplicated logic
+* architectural complexity
+* presentation masking uncertainty
+* model following wording rather than intent
+
+Recurring errors become candidates for architectural changes.
+
+---
+
+### 10. Fix the system, not only the output
+
+Where possible:
+
+**Bad output → corrected output**
+
+becomes:
+
+**Bad output → diagnosis → architecture change → new output**
+
+Possible interventions include:
+
+* changing a schema
+* separating two epistemic states
+* adding a provenance field
+* constraining the generation prompt
+* adding an audit step
+* changing the interface
+* removing a feature
+* preserving raw data
+* introducing a human review checkpoint
+
+This is one of the central practices demonstrated by the portfolio.
+
+---
+
+## Multiple models as collaborators and critics
+
+Different AI systems can be useful for different kinds of work.
+
+They can also be used against one another.
+
+One model may:
+
+* propose an architecture
+
+another may:
+
+* critique it
+
+another may:
+
+* implement it
+
+and another may:
+
+* test the implementation against the original requirements.
+
+This does not make the result automatically reliable.
+
+Models share many weaknesses.
+
+But deliberately separating roles can reduce the tendency for one continuous conversation to turn early assumptions into unquestioned facts.
+
+---
+
+## Human judgment
+
+The human role in this process is not primarily typing code that AI could type faster.
+
+It is maintaining responsibility for questions such as:
+
+* What problem are we solving?
+* What counts as evidence?
+* Which distinctions matter?
+* Which transformations are legitimate?
+* What level of uncertainty is acceptable?
+* Which model suggestions are worth keeping?
+* What should be deleted?
+* Does the output actually serve a user?
+* What does the system have enough evidence to claim?
+
+AI can participate in all of these discussions.
+
+Responsibility for the resulting architecture remains human.
+
+---
+
+## What I keep
+
+Where useful, the portfolio preserves evidence of the development process:
+
+* early concepts
+* alternative architectures
+* rejected approaches
+* model-generated proposals
+* audit findings
+* screenshots
+* before-and-after implementations
+* test cases
+* failure examples
+* revision notes
+
+These are included because the path to the final system often demonstrates more about AI practice than the finished interface alone.
+
+---
+
+## What I am trying to improve
+
+These systems are experiments, not demonstrations of perfect AI reliability.
+
+Important continuing questions include:
+
+* How much provenance is enough?
+* When does logging become burdensome?
+* Which checks should be automated?
+* Which judgments should remain explicitly human?
+* How can uncertainty be represented without making an interface unusable?
+* How much normalization is necessary for meaningful comparison?
+* How can audit layers avoid merely reproducing the biases of production models?
+* How can increasingly capable models be used without allowing increasingly invisible complexity?
+
+Those questions are part of the work rather than defects outside it.
 

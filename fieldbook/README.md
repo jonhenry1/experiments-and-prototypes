@@ -6,6 +6,10 @@ The central design problem is simple:
 
 > How can messy real-world evidence become computationally useful without losing provenance, ambiguity, or the distinction between evidence and interpretation?
 
+## [Launch the Interpretive Engine]
+[Live V2 Prototype](https://fieldbook-research-core.base44.app)
+Note that this is the standalone HTML version, which does not preserve the full functionality or use live data. This is intended as simple demo of the overall design and functional intent. 
+
 ## What Fieldbook is designed to preserve
 
 - original source material
